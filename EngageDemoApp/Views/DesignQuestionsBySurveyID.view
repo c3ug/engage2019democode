@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='10.0' maintenanceversion='1.0'
+ replicaid='842583BA003E9228'>
+<noteinfo noteid='2e2' unid='F89F0872923627DB842583C2003723FF' sequence='8'>
+<created><datetime>20190319T060216,95-04</datetime></created>
+<modified><datetime>20190319T090754,26-04</datetime></modified>
+<revised><datetime>20190319T090754,25-04</datetime></revised>
+<lastaccessed><datetime>20190319T090754,25-04</datetime></lastaccessed>
+<addedtofile><datetime>20190319T060216,97-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name='$FormatNote' summary='true'>
+<rawitemdata type='4'>
+AQBrNNoHIvNoNjmSPgC6gyWE
+</rawitemdata></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>DesignQuestionsBySurveyID</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+kAAFAFwAWAAHAAkADQAMAAwACwAJAAQAU3VydmV5S2V5UXVlc3Rpb25TZXFOb1F1ZXN0aW9uVGV4
+dFF1ZXN0aW9uVHlwZVF1ZXN0aW9uS2V5JENvbmZsaWN0JFJFRgQABAAAACQABQAEAEZvcm0BAA8A
+UURlc2lnblF1ZXN0aW9uAAoCAwAHAAoABAAJTDFT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+FgABAABECGYHAAAJAFN1cnZleUtleQ==
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAFAAgAiAAAAFZDCwQJAAMAAAAAABkAAQECDAABAAAAAAAAAAICAAAAVkMAAA0ABwAAAAAALAAB
+AAAMAAAAAAAAAAAAAgIAAABWQwAADAAFAAAAAAAbAQEAAAwAAAAAAAAAAAACAgAAAFZDAAAMAAQA
+AAAAAGAAAQAADIIAAAAAAAAAAAICAAAAVkMAAAsAAwAAAAAAUAABAAAMAAAAAAAAAAAAAgIAAABT
+dXJ2ZXlLZXlLZXlRdWVzdGlvblNlcU5vU2VxLk5vLlF1ZXN0aW9uVGV4dFRpdGxlUXVlc3Rpb25U
+eXBlVHlwZVF1ZXN0aW9uS2V5S2V5JgABAAAAAQEACQEAAAoBAQ4KAAAvAK0rAQABAAEAAAAAAAAA
+AABXQwEBAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAMAAAA
+AAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEADAAAAAAAAAAAAAAAAAAA
+AAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAwAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD/
+/wAAAAAAAAAAAAAAAAAAV0MBAQAMAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAA
+AAAAAEIAEQAAAAEA////AAEA9/f3AAEA9/f3AAAAAAAAAAAAAQD///8AAQD///8AAAABAAAAAAAB
+AAAAAAABAAAAAAAAAAgAAAAAAAEA
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>PY</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRw/AAAAAQABAAAAAQAAAAAAAAAAAAAACAACAHn/bAABAPDw8AABAAAAAAAJAAAAAAABAPDw8AAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item></note>
+

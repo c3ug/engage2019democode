@@ -1,0 +1,12 @@
+{
+    "QuestionKey":"",
+    "SurveyKey":"",
+    "QuestionSeqNo":"",
+    "QuestionOfTheDay":true,
+    "QuestionStartDate":"",
+    "QuestionText":"",
+    "QuestionDescription":"",
+    "QuestionType":"",
+    "QuestionChoices":["","","",""],
+    "SurveyStatus":""
+}

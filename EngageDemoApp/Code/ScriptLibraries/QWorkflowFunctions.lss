@@ -1,0 +1,373 @@
+'++LotusScript Development Environment:2:5:(Options):0:74
+%REM
+	Library QWorkflowFunctions
+	Created Mar 20, 2019 by Heiko Voigt/Harbour-Light/CA
+	Description: This Library will keep track of the features we need to do surveys in Notes/IDMA/Nomad
+	
+%END REM
+Option Public
+Option Declare
+
+
+
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Sub Initialize
+Declare function getFirstResponse(surveyKey As String, userName As String) As String
+Declare Function getNextResponse(surveyKey As String, currentQuestionKey As String, userName As String, SeqNo As String) As String
+Declare Function getResponseByKey(surveyKey As String, questionKey As String, userName As String, createIfNecessary As Boolean) As String
+Declare Function getPreviousResponse(surveyKey As String, currentQuestionKey As String, userName As String, seqno As String) As String
+
+'++LotusScript Development Environment:2:5:(Declarations):0:10
+Dim s As NotesSession
+Dim db As NotesDatabase
+Dim lookupViewQuestions As NotesView
+Dim lookupViewQuestionsByKey As NotesView
+Dim lookupViewResponses As NotesView
+Dim lookupViewSurveysByKey As NotesView
+
+Dim doccol As NotesDocumentCollection
+Dim coldoc As NotesDocument
+ 
+Const LOOKUP_FOR_QUESTIONS="(lu4Questions)"
+Const LOOKUP_FOR_RESPONSES="(lu4Responses)"
+Const LOOKUP_FOR_QUESTIONS_BY_KEY="(lu4QuestionsByKey)"
+Const LOOKUP_FOR_SURVEYS_BY_KEY="(lu4SurveysByKey)"
+
+
+'++LotusScript Development Environment:2:2:Initialize:1:10
+Sub Initialize
+	%REM
+		INitialize the base objects we have to deal with
+	%END REM
+	Set s = New NotesSession
+	Set db = s.Currentdatabase
+	Set lookupViewQuestions=db.Getview(LOOKUP_FOR_QUESTIONS)
+	Set lookupViewQuestionsByKey=db.Getview(LOOKUP_FOR_QUESTIONS_BY_KEY)
+	Set lookupViewResponses = db.GetView(LOOKUP_FOR_RESPONSES)
+	Set lookupViewSurveysByKey = db.Getview(LOOKUP_FOR_SURVEYS_BY_KEY)
+	
+End Sub
+
+'++LotusScript Development Environment:2:1:getFirstResponse:8:8
+%REM
+	Function getFirstResponse
+	Description: 	This functions returns the first response for a given survey for the respective user.
+					If none is found, it will create the first reposne document and return its UNID
+					if one is found, it will take the latest draft or create the next survey step or return "", if the survey is already done
+	Returns: UNID
+%END REM
+function getFirstResponse(surveyKey As String, userName As String) As String
+	On Error GoTo errorHandler
+	Dim key As String
+	Dim QuestionKey As String
+	Dim ve As NotesViewEntry
+	Dim colValues As Variant
+	Dim questionDoc As NotesDocument, responseDoc As NotesDocument
+	Dim surveyTitle As String, surveyDescription As String
+	
+	' Get the survey and the survey title from lookup view
+	
+	Set ve = lookupViewSurveysByKey.Getentrybykey(surveykey, true)
+	
+	If(ve Is Nothing) Then
+		getFirstResponse=""
+		Print("-> Survey for SurveyKey not found: "+surveykey)
+		Exit Function
+	End If
+	
+	colValues = ve.Columnvalues
+	surveytitle = colValues(1)
+	surveyDescription = colValues(3)
+	
+	' Get First question for survey, then get question key
+	
+	Set ve = lookupViewQuestions.Getentrybykey(surveyKey, true)
+	If(ve Is Nothing) Then
+		getFirstResponse=""
+		Print("-> SurveyKey not found: "+surveykey)
+		Exit Function
+		
+	End If
+	
+	Set questionDoc = ve.Document
+	
+	
+	' Check if there is a response for surveykey#questionkey#username#seqno
+	QuestionKey = questionDoc.QuestionKey(0)
+	
+	key = surveykey+"#"+QuestionKey+"#"+username
+	Print("Key: "+key)
+	Call lookupViewResponses.Refresh()
+	lookupViewResponses.Autoupdate = true
+	Set ve = Nothing
+	Set ve = lookupViewResponses.Getentrybykey(key, true)
+	
+	If(ve Is Nothing) Then
+		Print("-> No existing question document found !")
+		' if no, create response doc from question, save as draft and return UNID
+		Set responseDoc = db.createDocument
+		responseDoc.Form="Response"
+		responseDoc.surveykey = surveykey
+		responseDoc.questionkey = questionkey
+		responseDoc.ResponseUserName = username
+		responseDoc.questionType = questionDoc.questiontype
+		responseDoc.questionchoices = questiondoc.questionchoices
+		responseDoc.questionText = questiondoc.questiontext
+		responseDoc.questionDescription = questionDoc.questionDescription
+		responseDoc.QuestionSeqNo = questionDoc.QuestionSeqNo
+		responseDoc.responseStatus="0"
+		responseDoc.surveyTitle = surveyTitle
+		responseDoc.surveyDescription = surveyDescription
+		
+		Call responseDoc.Computewithform(false, false)
+		Call responseDoc.Save(true, true)
+		getFirstResponse = responseDoc.Universalid
+		
+		GoTo leave
+	Else
+		' if yes, return UNID
+				Set responseDoc = ve.Document
+		getFirstResponse = responseDoc.Universalid
+		GoTo leave
+		
+	End If
+	
+		Call lookupViewResponses.Refresh()
+		GoTo leave
+ErrorHandler:	
+
+	MsgBox("An Error occured in Module <getFirstResponse> at line <"+CStr(erl())+">. Error Text: "+Error$)
+	getFirstResponse=""
+	Resume leave
+
+
+leave:
+	
+	
+End Function
+
+
+'++LotusScript Development Environment:2:1:getNextResponse:6:8
+%REM
+	Function getNextResponse
+	Description: 	Determines the next question from a current Question, returns a UNID of a response found or creates the response document if no repsonse for the 
+					User and the survey have been found.
+%END REM
+Function getNextResponse(surveyKey As String, currentQuestionKey As String, userName As String, SeqNo As String) As String
+	
+	
+	On Error GoTo Errorhandler
+	
+	Dim key As String, keyshort As String, keylookupsurvey As string
+	Dim QuestionKey As String
+	Dim ve As NotesViewEntry
+	Dim colValues As Variant
+	Dim questionDoc As NotesDocument, responseDoc As NotesDocument
+	Dim surveyTitle As String, surveyDescription As String
+	
+	Set ve = lookupViewSurveysByKey.Getentrybykey(surveykey, True)
+	
+	If(ve Is Nothing) Then
+		getNextResponse=""
+		Print("-> Survey for SurveyKey not found: "+surveykey)
+		Exit Function
+	End If
+	
+	colValues = ve.Columnvalues
+	surveytitle = colValues(1)
+	surveyDescription = colValues(3)
+	
+	
+	key = surveykey+"#"+currentQuestionKey+"#"+SeqNo
+			
+	Set questionDoc = lookupViewQuestionsByKey.Getdocumentbykey(Key, True)
+	If(questionDoc Is Nothing) Then
+		getNextResponse=""
+		Print("-> Key not found: "+key)
+		Exit Function
+		
+	End If
+	
+	Set questionDoc = lookupViewQuestionsByKey.Getnextdocument(questionDoc)
+	
+	' Now we have to check if there are any further documents within our survey. For that, we compare the survey keys
+	If(questionDoc Is Nothing) Then
+		getNextResponse="99"
+		GoTo leave
+	End If
+	If(surveykey <> questionDoc.surveykey(0)) Then
+		'No more questions, survey done !
+		getNextResponse="99"
+		GoTo leave
+	End If
+
+	keylookupsurvey = surveykey+"#"+questionDoc.questionkey(0)+"#"+username
+	
+	print("Key: "+keylookupsurvey)
+	Call lookupViewResponses.Refresh()
+	lookupViewResponses.Autoupdate = True
+	Set ve = Nothing
+	Set ve = lookupViewResponses.Getentrybykey(keylookupsurvey, True)
+	
+	If(ve Is Nothing) Then
+		Print("-> No existing question document found !")
+		' if no, create response doc from question, save as draft and return UNID
+		Set responseDoc = db.createDocument
+		responseDoc.Form="Response"
+		responseDoc.surveykey = surveykey
+		responseDoc.questionkey = questiondoc.questionkey
+		responseDoc.ResponseUserName = username
+		responseDoc.questionType = questionDoc.questiontype
+		responseDoc.questionchoices = questiondoc.questionchoices
+		responseDoc.questionText = questiondoc.questiontext
+		responseDoc.questionDescription = questionDoc.questionDescription
+		responseDoc.QuestionSeqNo = questionDoc.QuestionSeqNo
+		responseDoc.responseStatus="0"
+		responseDoc.surveyTitle = surveyTitle
+		responseDoc.surveyDescription = surveyDescription
+		
+		Call responseDoc.Computewithform(False, False)
+		Call responseDoc.Save(True, True)
+		getNextResponse = responseDoc.Universalid
+		
+		GoTo leave
+	Else
+		' if yes, return UNID
+		Set responseDoc = ve.Document
+		getNextResponse = responseDoc.Universalid
+		GoTo leave
+		
+	End If
+	
+	Call lookupViewResponses.Refresh()
+	
+	GoTo leave
+	
+ErrorHandler:
+	MsgBox("An Error occured in Module <getNextResponse> at line <"+CStr(Erl())+">. Error Text: "+Error$)
+	getNextResponse=""
+	Resume leave
+	
+leave:
+	
+End Function
+
+'++LotusScript Development Environment:2:1:getResponseByKey:5:8
+%REM
+	Function getResponseByKey
+	Description: Returns a UNID for an existing repsonse or creates one if none is found for survey, question adn user.
+%END REM
+Function getResponseByKey(surveyKey As String, questionKey As String, userName As String, createIfNecessary As Boolean) As String
+	
+End Function
+
+'++LotusScript Development Environment:2:1:getPreviousResponse:5:8
+%REM
+	Function getPreviousResponse
+	Description: Comments for Function
+%END REM
+Function getPreviousResponse(surveyKey As String, currentQuestionKey As String, userName As String, seqno As String) As String
+	On Error GoTo Errorhandler
+	
+	
+	
+	On Error GoTo Errorhandler
+	
+	Dim key As String, keyshort As String, keylookupsurvey As String
+	Dim QuestionKey As String
+	Dim ve As NotesViewEntry
+	Dim colValues As Variant
+	Dim questionDoc As NotesDocument, responseDoc As NotesDocument, prevDoc As notesDocument
+	Dim surveyTitle As String, surveyDescription As String
+	
+	Set ve = lookupViewSurveysByKey.Getentrybykey(surveykey, True)
+	
+	If(ve Is Nothing) Then
+		getPreviousResponse=""
+		Print("-> Survey for SurveyKey not found: "+surveykey)
+		Exit Function
+	End If
+	
+	colValues = ve.Columnvalues
+	surveytitle = colValues(1)
+	surveyDescription = colValues(3)
+	
+	key = surveykey+"#"+currentQuestionKey+"#"+SeqNo
+	Set ve = lookupViewQuestionsByKey.Getentrybykey(Key, True)
+	If(ve Is Nothing) Then
+		getPreviousResponse=""
+		Print("-> Key not found: "+key)
+		Exit Function
+		
+	End If
+	
+	
+	
+	Set questionDoc = ve.Document
+	
+	Set prevDoc = lookupViewQuestionsByKey.Getprevdocument(questionDoc)
+	
+	' Now we have to check if there are any further documents within our survey. For that, we compare the survey keys
+	If(prevDoc Is Nothing) Then
+		getPreviousResponse="0"
+		GoTo leave
+	End If
+	If(surveykey <> questionDoc.surveykey(0)) Then
+		'No more questions, survey start !
+		getPreviousResponse="0"
+		GoTo leave
+	End If
+
+	keylookupsurvey = surveykey+"#"+prevDoc.questionkey(0)+"#"+username
+	
+	Print("Key: "+keylookupsurvey)
+	Call lookupViewResponses.Refresh()
+	lookupViewResponses.Autoupdate = True
+	Set ve = Nothing
+	Set ve = lookupViewResponses.Getentrybykey(keylookupsurvey, True)
+	
+	If(ve Is Nothing) Then
+		Print("-> No existing question document found !")
+		' if no, create response doc from question, save as draft and return UNID
+		Set responseDoc = db.createDocument
+		responseDoc.Form="Response"
+		responseDoc.surveykey = surveykey
+		responseDoc.questionkey = questionkey
+		responseDoc.ResponseUserName = username
+		responseDoc.questionType = prevDoc.questiontype
+		responseDoc.questionchoices = prevdoc.questionchoices
+		responseDoc.questionText = prevdoc.questiontext
+		responseDoc.questionDescription = prevDoc.questionDescription
+		responseDoc.QuestionSeqNo = prevDoc.QuestionSeqNo
+		responseDoc.responseStatus="0"
+		responseDoc.surveyTitle = surveyTitle
+		responseDoc.surveyDescription = surveyDescription
+		
+		Call responseDoc.Computewithform(False, False)
+		Call responseDoc.Save(True, True)
+		getPreviousResponse = responseDoc.Universalid
+		
+		GoTo leave
+	Else
+		' if yes, return UNID
+		Set responseDoc = ve.Document
+		getPreviousResponse = responseDoc.Universalid
+		GoTo leave
+		
+	End If
+	
+	Call lookupViewResponses.Refresh()
+	
+	
+	
+	GoTo leave
+	
+ErrorHandler:
+	MsgBox("An Error occured in Module <getPreviousResponse> at line <"+CStr(Erl())+">. Error Text: "+Error$)
+	getPreviousResponse=""
+	Resume leave
+	
+leave:
+	
+End Function

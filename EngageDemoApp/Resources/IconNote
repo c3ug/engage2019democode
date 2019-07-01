@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='10.0'
+ maintenanceversion='1.0' replicaid='842583BA003E9228'>
+<noteinfo noteid='11e' unid='CD5C51C8F095F94D842583BA003E9241' sequence='12'>
+<created><datetime>20190311T072326,73-04</datetime></created>
+<modified><datetime>20190321T122825,67-04</datetime></modified>
+<revised><datetime>20190321T122825,66-04</datetime></revised>
+<lastaccessed><datetime>20190321T122825,66-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T072326,77-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<item name='IconBitmap' summary='true'>
+<rawitemdata type='6'>
+AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA
+D+AAAAfAAAADgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAcAAAAPwAAAP8AAAD/AAAA/wAAAP
++AAAH/wAAD//8A////gf//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAA
+DxERERHwAAAAAAAAAAAAAPEd3d3RHwAAAAAAAAAAD//x3Xd33R//8AAAAAAAAPEREdd3d30RER8A
+AAAAAA8R3d3Xd3d93d0R8AAAAADxHXd913d3fdd30R8AAAAA8dd3fdd3d33Xd30fAAAAAPHXd33X
+d3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8dd3fdd3d33Xd30fAAAAAPHXd33Xd3d913d9HwAA
+AA/x13d913d3fdd3fR/wAADxEdd3fdd3d33Xd30RHwAPEd13d33Xd3d913d33RHw8R13d3d913d3
+fdd3d3fRH/HXd3d3fdd3d33Xd3d3fR/x13d3d33Xd3d913d3d30f8dd3d3fR13d3fR13d3d9H/Ed
+3d3dEdd3d30R3d3d0R8PEREd3dEd3d3RHd3RERHwAP/x13d9Ed3dEdd3fR//AAAA8dd3fR13d9HX
+d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
+EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
+AAAAUEECICABAAD/////+A4DgA==
+</rawitemdata></item>
+<item name='$DefaultFrameset'><text>fsNotesHome</text></item>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$FlagsNoRefresh'><text/></item>
+<item name='$PIRCRefreshModTime'><datetime>20190321T140415,84+01</datetime></item>
+<item name='$TemplateModTime'><datetime>20190321T090321,48-04</datetime></item>
+<item name='$TemplateServerName'><text>CN=Heiko Voigt/O=Harbour-Light/C=CA</text></item>
+<item name='$TemplateFileName'><text>CN=Loon/O=Harbour-Light/C=CA!!q.ntf</text></item>
+<item name='$Daos'><text>0</text></item>
+<item name='$LargeSummary'><text>0</text></item>
+<item name='$Flags'><text>J7Fc</text></item>
+<item name='$TITLE'><text>Q!
+</text></item></note>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="842583BA003E9228" version="10.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="262" sequence="3" unid="D4F79E42A2F90AD7842583BA004B6653">
+<created><datetime>20190311T094333,95-04</datetime></created>
+<modified><datetime>20190321T090419,93-04</datetime></modified>
+<revised><datetime>20190321T140026,56+01</datetime></revised>
+<lastaccessed><datetime>20190321T090419,92-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T094334,25-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Karin Kolb/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name>CN=Brigitte Leitner/O=SIT GmbH/C=DE</name><name>CN=Detlev Lückel/OU=ADM/O=GTW/C=De</name><name>CN=Karin Kolb/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name="$TITLE"><text>main.css</text></item>
+<item name="$MimeType"><text>text/css</text></item>
+<item name="$Flags"><text>34C=Q</text></item>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>main.css</text></item></note>

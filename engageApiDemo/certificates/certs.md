@@ -1,0 +1,1 @@
+Put your certificates for proton in here. For which ones, check in the server-config.js

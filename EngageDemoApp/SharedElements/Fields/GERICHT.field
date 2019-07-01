@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='sharedfield' xmlns='http://www.lotus.com/dxl' version='10.0'
+ maintenanceversion='1.0' replicaid='842583BA003E9228'>
+<noteinfo noteid='28a' unid='E61F966DAE0AFE49842583BA004B7F33' sequence='2'>
+<created><datetime>20190311T094437,63-04</datetime></created>
+<modified><datetime>20190321T090419,44-04</datetime></modified>
+<revised><datetime>20190321T140026,46+01</datetime></revised>
+<lastaccessed><datetime>20190321T090419,43-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T094439,24-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Karin Kolb/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name
+>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+</rawitemdata></item>
+<item name='$TITLE'><text>GERICHT</text></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='GERICHT' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='$Fields'><text>GERICHT</text></item>
+<item name='$Body' summary='true' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAArdBgAAiv/+/1AA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAIr/mAKAAAAFADACAAAAAAAAAgEBAA5sAgAAAAAAAAcAAAAAAGwC
+BwAuACcALS0tLSBTdGFtbWRhdGVuLURiIGF1cyBFbnZpcm9ubWVudCAtLS0tAAcACgADAAkxUwAB
+ACYAAwBfZGIAAQAMAEFSR19TVEFNTV9EQnwBAQABADsAhgIDAAcAGgAUAAkwUjFTOEUyUzRTNlM3
+UzlTMTBTAQBCAAYAX2RiZGVmBQADAF9kYgABAAAACgKvACQAFAABAAoAQVJHX1NULk5TRq4AEAAF
+AAMAX2RiAK4ABAC1AwMABwAeABcACTBSMVMyRTJTNFM1UzZTOFMxMFMxMVMAAQBOAAQAX2RibgUA
+BgBfZGJkZWZqAQAAAAAAAAAA8D8KAq8AKAAWAAEAAAAFAAYAX2RiZGVmHwKuABIABQAGAF9kYmRl
+Zq4ABAC1AwMABwAoACIACTBSMVM2RTJTNFM2UzdTOFM5UzExUzEyUzEzUzE1UzE2UwcAOgAzAC0t
+LS0gTmFtZSBkZXMgR2VyaWNodHMgYXVzIERhdGVuYmFuayBlcm1pdHRlbG4gLS0tLQAHAAwABgAJ
+MFJSMVMBABYAAgBfdgEABwB2c1N0YW1tAAMABwAOAAcACTBSMVMyUwABABwAAgBfawEADQBtR2Vy
+aWNodFN0YW1tAAMABwAOAAcACTBSMVMyUwABADYAAgBfbgEAAAABAAAAHwIFAAQAX2RibgUAAgBf
+dgUAAgBfawEABwBQT3B0S2V5AIMFAwAHABwAFgAJMFIxUzJTNVM2UzhTMTBTMTJTMTRTAAAoAAUA
+AgBfbloBrwAYAAoAAQAAAK4ADgAFAAIAX26uAAQAtQMDAAcADgAHAAkwUjdTOVMAR0VSSUNIVABi
+DgEAhAAAAAAAAAAAAN4GAACK/4X/CAABAAAK
+</rawitemdata></item></note>
+

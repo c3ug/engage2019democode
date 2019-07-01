@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="842583BA003E9228" version="10.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="35e" sequence="5" unid="6CF09DEB57FF5CD6842583CA00479302">
+<created><datetime>20190327T090146,90-04</datetime></created>
+<modified><datetime>20190328T094912,13-04</datetime></modified>
+<revised><datetime>20190328T094912,12-04</datetime></revised>
+<lastaccessed><datetime>20190328T094912,12-04</datetime></lastaccessed>
+<addedtofile><datetime>20190327T090146,95-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>ca/c3ug/engagedemo/dxlsample.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>ca/c3ug/engagedemo/dxlsample.java</text></item>
+
+
+</note>

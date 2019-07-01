@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='sharedfield' xmlns='http://www.lotus.com/dxl' version='10.0'
+ maintenanceversion='1.0' replicaid='842583BA003E9228'>
+<noteinfo noteid='27e' unid='0E5D7093FE6212F6842583BA004B7F30' sequence='2'>
+<created><datetime>20190311T094437,60-04</datetime></created>
+<modified><datetime>20190321T090417,41-04</datetime></modified>
+<revised><datetime>20190321T140026,02+01</datetime></revised>
+<lastaccessed><datetime>20190321T090417,40-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T094438,46-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Karin Kolb/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name
+>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+</rawitemdata></item>
+<item name='$TITLE'><text>AKT_KAM</text></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$DesignerVersion'><text>8.5.2</text></item>
+<item name='AKT_KAM' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='$Fields'><text>AKT_KAM</text></item>
+<item name='$Body' summary='true' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAArdBgAAiv/+/1AA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAIr/RgCCAAAFACACAAAAAAAAAgEADQgUAAAAAAAAAAcABgAAABQA
+AAASAAUABwBBS1RfS0FNAAMAQUtUX0tBTUthbW1lcgBiDgEAhAAAAAAAAAAAAN4GAACK/4X/CAAB
+AAAK
+</rawitemdata></item></note>
+

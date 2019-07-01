@@ -1,0 +1,214 @@
+table
+{
+	border-collapse: collapse;
+	border:          0px solid gray;
+	padding: 	     2px;
+	margin:          2px; 	
+}
+
+
+td.label {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 10pt;
+	font-weight        : bold;
+	color              : rgb(255,255,255);
+	background-color   : rgb(255,0,0);
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;
+}
+
+td.sublabel {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 9pt;
+	font-weight        : bold;
+	color              : rgb(0,0,0);
+	background-color   : rgb(224,240,228);
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;
+}
+
+td.labelmiddle {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 9pt;
+	font-weight        : bold;
+	color              : rgb(0,0,0);
+	background-color   : rgb(224,240,228);
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 0px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;
+}
+
+td.linklabel {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 10pt;
+	font-weight        : bold;
+	color              : rgb(0,0,255);
+	text-decoration    : underline;
+	background-color   : rgb(224,240,228);
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;
+}
+
+td.field {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	background-color   : #FFFFFF;
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;	
+}
+
+td.subfield {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 9pt;
+	background-color   : #FFFFFF;
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;	
+}
+
+
+td.thead {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 11pt;
+	font-weight        : bold;
+	color              : rgb(255,255,255);
+	border-width       : 0px;
+	background-color   : rgb(255,150,65);
+	border-style       : solid;
+	border-color       : rgb(239,239,239); 
+	border-width       : 25;			
+}
+
+td.H1  
+{ 
+	background         : rgb(255,255,255);
+	color              : rgb(95,95,95);
+	font-family        : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 18pt;
+	font-weight        : bold;
+	padding            : 0; 
+	border-style       : solid;
+	border-color       : rgb(224,240,228); 
+	border-width       : 25;	
+}
+
+.pageContent{background-color:rgb(224,240,228);}
+
+.formContent{background-color:rgb(250,250,250);}
+
+.H1  
+{ 
+	background         : rgb(255,255,255);
+	color              : rgb(95,95,95);
+	font-family        : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 18pt;
+	font-weight        : bold;
+	padding            : 0; 
+	border-style       : solid;
+	border-color       : rgb(224,240,228); 
+	border-width       : 25;	
+}
+
+.H2  
+{ 
+	background         : rgb(255,255,255);
+	color              : rgb(0,0,0);
+	font-family        : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 12pt;
+	font-weight        : bold;
+	padding            : 0; 
+	border-style       : none;
+	border-color       : #333333; 
+	border-width       : 0; 
+	border-bottom-width: 0;	
+}
+
+.footerLabel
+{
+	background   : rgb(255,255,255);
+	color        : rgb(0,0,0);	
+	font-family  : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size    : 9pt;
+}
+
+.footerField 
+{
+	background   : rgb(239,239,239);
+	color        : rgb(0,0,0);	
+	font-family  : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size    : 9pt;
+	font-weight  : bold;	
+}
+
+
+
+th.first-child {
+   border-left: 1px solid #999;
+   }
+thead th {
+   border-top: 1px solid #999;
+   }
+
+tr.mo td, tr.mo th {
+   border-bottom-width: 3px;
+   }
+tr.do td, tr.do th {
+   border-bottom-width: 3px;
+   }
+tr.di td.first-child, tr.di th.first-child {
+   border-left-width: 3px;
+   }
+tr.mi td.first-child, tr.mi th.first-child {
+   border-left-width: 3px;
+   }
+tr.do td.first-child, tr.do th.first-child {
+   border-left-width: 3px;
+   }
+tr.di td.last-child, tr.di th.last-child {
+   border-right-width: 3px;
+   }
+tr.mi td.last-child, tr.mi th.last-child {
+   border-right-width: 3px;
+   }
+tr.do td.last-child, tr.do th.last-child {
+   border-right-width: 3px;
+   }
+   
+td.paL {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size          : 10pt;
+	font-weight        : bold;
+	color              : rgb(0,0,0);
+	background-color   : rgb(224,240,228);
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;
+}
+
+td.paT {
+	font-family        : font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	background-color   : #FFFFFF;
+	border-style       : solid;
+	border-color       : rgb(192,192,192); 
+	border-width       : 1px;	
+	border-left-width  : 0px;		
+	border-right-width : 0px;	
+}
+

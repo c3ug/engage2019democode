@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='10.0' maintenanceversion='1.0'
+ replicaid='842583BA003E9228'>
+<noteinfo noteid='16e' unid='67A0C578AD615CAB842583BA003EB23E' sequence='2'>
+<created><datetime>20190311T072448,62-04</datetime></created>
+<modified><datetime>20190321T090424,66-04</datetime></modified>
+<revised><datetime>20190321T140027,58+01</datetime></revised>
+<lastaccessed><datetime>20190321T090424,65-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T072448,65-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name
+>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name='$TITLE'><text>$DBIcon</text></item>
+<item name='$Flags'><text>34Ci~Q</text></item>
+<item name='$ImagesWide' sign='true'><number>1</number></item>
+<item name='$ImagesHigh' sign='true'><number>1</number></item>
+<item name='$ImagesColorize' sign='true'><number>0</number></item>
+<item name='$FileSize' sign='true'><number>1530</number></item>
+<item name='$ImageData' sign='true'>
+<rawitemdata type='1'>
+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
+</rawitemdata></item>
+<item name='$MimeType' sign='true'><text>image/png</text></item>
+<item name='$FileModDT' sign='true'><datetime>20190311T121723,09+01</datetime></item>
+<item name='$ImageNames' sign='true'><text>\\Mac\Home\Downloads\search.png</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

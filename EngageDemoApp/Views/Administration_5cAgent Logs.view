@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='10.0' maintenanceversion='1.0'
+ replicaid='842583BA003E9228'>
+<noteinfo noteid='2da' unid='285ADA01DF8E011D842583BA004CF93E' sequence='6'>
+<created><datetime>20190311T100045,42-04</datetime></created>
+<modified><datetime>20190321T090416,72-04</datetime></modified>
+<revised><datetime>20190321T140025,88+01</datetime></revised>
+<lastaccessed><datetime>20190321T090416,71-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T100045,73-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name
+>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+kgAFAFoAVQAHAAkADAALAAsACwAJAAQAQWdlbnROYW1lQWdlbnRTdGFydERUQWdlbnRTdG9wRFRB
+Z2VudFN0YXR1c0FnZW50U2VydmVyJENvbmZsaWN0JFJFRgAEAAQAAAAkAAUABABGb3JtYQEBAA4A
+YWdlbnRwcm90b2tvbGwKAgMABwAOAAgACUwxUzVTNlM=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+TQAEAABEiGYHAAAJAIFmAAkADACBZgAVAAsAgWYAIAALAEFnZW50TmFtZUFnZW50U3RhcnREVEFn
+ZW50U3RvcERUQWdlbnRTdGF0dXM=
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAFAC4AKQgAAFZDAwAJAAUAAAAAABwAAQEKCwABAAAAAAAAAAACAAAAVkMFAAwACgAAAAAAUAAB
+AAAKAAAAAAAAAAAAAgIAAABWQwUACwAIAAAAAABQAAEAAAoAAAAAAAAAAAACAgAAAFZDBQALAAYA
+AAAAAG0AAQECCgAAAAAAAAAAAAICAAAAVkMAAAsABgAAAAAAigABAAAKAAAAAAAAAAAAAgIAAABB
+Z2VudE5hbWVBZ2VudEFnZW50U3RhcnREVFN0YXJ0ZGF0dW1BZ2VudFN0b3BEVEVuZGRhdHVtQWdl
+bnRTdGF0dXNTdGF0dXNBZ2VudFNlcnZlclNlcnZlciYAAQAAAAEBAAkBAAAKAQEOCgAALwCtKwkA
+AQABAQAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAA//8AAAAAAAAAAAAAAAAA
+AFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAkAAAAA
+AAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAA
+AAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//
+AAAAAAAAAAAAAAAAAABCAAEAAAABAP///wAFAPf39wABAO/v7wAAAAAAAAAAAAEA////AAEA7+/v
+AAAAAQAAAAAAAQAAAAAAAQAAAAAAAAAIAAAAAAABAFhDAEiAAwAAAAAAAQECAgEBAQEHBAMAAAAA
+AAAAACAuLjpZQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>Y</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRw/AAAAAQABAAAACAAAAAAAAAAAAAAACAACAHn/bAABAO/v7wABAAAAAAAJAAAAAAABAO/v7wAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>Administration\Agent Logs|agentprotocols</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="842583BA003E9228" version="10.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="19e" sequence="2" unid="A457E2D0830CF1AF842583BA004B52F2">
+<created><datetime>20190311T094244,34-04</datetime></created>
+<modified><datetime>20190321T090416,51-04</datetime></modified>
+<revised><datetime>20190321T140025,84+01</datetime></revised>
+<lastaccessed><datetime>20190321T090416,50-04</datetime></lastaccessed>
+<addedtofile><datetime>20190311T094244,69-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name>CN=Karin Kolb/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name><name>CN=Heiko Voigt/O=SIT GmbH/C=DE</name><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></updatedby>
+<wassignedby><name>CN=Heiko Voigt/O=Harbour-Light/C=CA</name></wassignedby>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$DesignerVersion" sign="true"><text>8</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+
+<item name="$MimeType" sign="true"><text>image/gif</text></item>
+<item name="$FileModDT" sign="true"><datetime dst="true">20080415T191737,67-04</datetime></item>
+<item name="$ImageNames" sign="true"><text>Follow-up_18x18.gif</text></item>
+<item name="$TITLE" sign="true"><text>act_followup</text></item>
+
+<item name="$LANGUAGE" sign="true"><text>de</text></item>
+<item name="$LastBuildTime" sign="true"><datetime>20081201T144542,04+08</datetime></item>
+<item name="$BabelInfo" sign="true"><textlist><text>AF77D32E5C7786FB852571DB00524090</text><text>de-DE</text></textlist></item>
+<item name="$EditFilePath"><text>C:\Users\kkolb\AppData\Local\Temp\notesD7452A\~Follow-up_18x18.gif</text></item>
+<item name="$Flags"><text>34CiQ$</text></item></note>

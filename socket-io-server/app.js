@@ -8,10 +8,6 @@ const index = require("./routes/index");
 const app = express().use('*', cors());
 
 app.use(index);
-const auth = {
-    username: 'HVoigt',
-    password: 'anysit2010!'
-}
 
 
 const server = http.createServer(app);
